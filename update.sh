@@ -62,7 +62,7 @@ if [ $git_update -eq 1 ]; then
 
     ${run_as}php $script_path"bin/magento" setup:upgrade
     ${run_as}php $script_path"bin/magento" setup:di:compile
-    ${run_as}php $script_path"bin/magento" setup:static-content:deploy fr_CA en_US --jobs 1
+    ${run_as}php $script_path"bin/magento" setup:static-content:deploy en_US --jobs 1
 
     chown -R $permiss $script_path*
     chown -R $permiss $script_path.??*
